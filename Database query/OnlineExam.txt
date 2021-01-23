@@ -1,0 +1,83 @@
+Create table tblUserDetails
+(
+ UserId int,
+Firstname nvarchar(50),
+Lastname nvarchar(50),
+
+Username nvarchar(100),
+Password nvarchar(100),
+Email nvarchar(100),
+PhoneNumber nvarchar(50),
+SecurityQuestion nvarchar(100),
+SecurityAnswer nvarchar(100),
+Usertype nvarchar(50),
+
+)
+select * from tblUserDetails
+select * from tblAdminDetails
+select * from tblQuestions
+Create table tblAdminDetails
+(
+ AdminId int,
+Firstname nvarchar(50),
+Lastname nvarchar(50),
+
+AdminName nvarchar(100),
+Password nvarchar(100),
+Email nvarchar(100),
+PhoneNumber nvarchar(50),
+SecurityQuestion nvarchar(100),
+SecurityAnswer nvarchar(100),
+Usertype nvarchar(50),
+
+)
+
+create table tblQuestions
+(
+ SerialNumber int primary key,
+SubjectName nvarchar(50),
+Question nvarchar(100),
+Option1 nvarchar(50),
+Option2 nvarchar(50),
+Option3 nvarchar(50),
+Option4 nvarchar(50),
+Answer nvarchar(50),
+ChoiceType nvarchar(50),
+
+
+
+)
+
+create table tblSubject
+(
+SubjectId int,
+SubjectName nvarchar(50),
+
+)
+
+
+
+create table tblResult
+(
+ ResultId nvarchar(50),
+ UserName nvarchar(50),
+ SubjectName nvarchar(50),
+ TestDate date,
+ NumberOfQuestions int,
+ Marks int,
+ Status nvarchar(50)
+)
+
+
+
+create table tblTestSetting
+(
+TestId int ,
+TimeLimit int,
+NumberOfQuestions nvarchar(50) ,
+
+
+)
+
+
+select * from tblUserDetails
